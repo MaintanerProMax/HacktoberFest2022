@@ -7,12 +7,12 @@ using namespace std;
 class Solution{
     public:
     
-    long long maxSubarraySum(int arr[], int n){
+    long long maxSubarraySum(int arr[], int k){
         
        
      int csum = arr[0];
         int msum = arr[0];
-        for(int i=1;i<n;i++)
+        for(int i=1;i<k;i++)
         {
             csum = max(csum+arr[i],arr[i]);
             msum = max(msum,csum);
